@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD System</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container py-5 px-5 my-5 outer-form">
+        <h1 class="text-secondary text-center my-2">Employees List</h1>
+      
+        <div class="form-group">
+            <label for="emp-name">Employee Name</label>
+            <input id="emp-name"  name="emp-name" type="text" class="form-control">
+            <div id="msg-name" class=" text-danger my-3"></div>
+        </div>
+        <div class="form-group">
+            <label for="emp-age">Employee Age</label>
+            <input id="emp-age" name="emp-age" type="number" min="23" max="60" class="form-control">
+            <div id="msg-age" class="  text-danger my-3"></div>
+
+         </div>
+        <div class="form-group">
+            <label for="emp-salary">Employee Salary</label>
+            <input id="emp-salary" name="emp-salary" type="number" class="form-control">
+            <div id="msg-salary" class="  text-danger my-3"></div>
+
+         </div>
+        <div class="form-group">
+            <label for="emp-phone">Employee Phone</label>
+            <input id="emp-phone" name="emp-phone" type="number" class="form-control">
+            <div id="msg-phone" class="  text-danger my-3"></div>
+
+         </div>
+        <button disabled id ="addBtn" class="btn btn-dark float-right">ADD Employee</button>
+        <div class="clearfix"></div>
+    </div>
+
+   <div class="container py-5 px-5 my-5 outer-form">
+    <input  onkeyup="search(this.value)" type="text" class="form-control my-5 text-center" placeholder="Search By Name">
+   <table class="table">
+    <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Salary</th>
+        <th>Phone</th>
+        <th>Delete</th>
+        <th>Update</th>
+    </thead>
+    <tbody id="tableBody">
+
+    </tbody>
+</table>
+</div>
+    
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

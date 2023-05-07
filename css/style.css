@@ -1,0 +1,17 @@
+*{
+    font-family: cursive;
+}
+.form-control:focus {
+    border-color: #e0e0e0;
+    box-shadow: inset 0 1px 1px rgba(165, 165, 165, 0.075), 0 0 8px rgba(181, 181, 181, 0.6);;
+    background-color: rgba(255, 133, 160, 0.131);
+}
+
+.outer-form{
+    box-shadow:0px 0px 20px 0px rgb(186, 185, 185);
+    border-radius: 8px;
+    background: linear-gradient(to top right,white,rgb(255, 253, 253));
+}
+body{
+background:linear-gradient(to bottom ,rgba(178, 174, 229, 0.267),rgba(255, 187, 187, 0.4),rgba(178, 174, 229, 0.267),rgba(255, 187, 187, 0.4),rgba(178, 174, 229, 0.267),rgba(255, 187, 187, 0.4));
+}
